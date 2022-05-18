@@ -1,0 +1,73 @@
+body{
+    padding:0;
+    text-align:center;
+}
+
+
+.summary_a{
+    font-size: 16px;
+}
+
+.title{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subtitle{
+    margin: auto;
+    font-size: 24px;
+}
+
+.subtitle_2{
+    margin: auto;
+    font-size: 24px;
+}
+
+.format_box{
+    display: flex;
+}
+
+.format{
+    display: flex;
+    vertical-align: top;
+    margin-left: 30px;
+}
+
+#day{
+    width: 130px;
+    height: 36px;
+    text-align: center;
+}
+
+#food_time{
+    width: 70px;
+    height: 36px;
+    text-align: center;
+}
+
+#place{
+    width: 70px;
+    height: 36px;
+    text-align: center;
+}
+
+#foods{
+    width: 150px;
+    height: 36px;
+    text-align: center;
+}
+
+#text_area{
+    width: 250px;
+    height: 55px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 30px;
+}
