@@ -11,7 +11,9 @@ $foods = $_POST['foods'];
 $text_area = $_POST['text_area'];
 
 // 飛んできたdataを配列にまとめる
-$write_data = array($day,$food_time,$place,$foods,$text_area);
+$write_data = [$day,$food_time,$place,$foods,$text_area];
+// var_dump($write_data);
+// exit();
 
 // ファイルを開く,dataにcsvで保存を行う
 $file = fopen('data/foodselect.csv', 'a');
@@ -20,6 +22,8 @@ flock($file, LOCK_EX);
 
 // ファイルにデータを書き込む
 fputcsv($file, $write_data);
+
+
 
 // ファイルのロックを解除する
 flock($file, LOCK_UN);
